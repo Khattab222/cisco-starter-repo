@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import TabContent from './TabContent'
+import PublicId from './PublicId'
 
 function LayoutComponent() {
     const [tabConte, settabConte] = useState('')
@@ -13,6 +14,7 @@ function LayoutComponent() {
     </div>
     <div className='showtab'>
     <TabContent content={tabConte}/> 
+   <PublicId/>
     </div>
     </div>
   )
